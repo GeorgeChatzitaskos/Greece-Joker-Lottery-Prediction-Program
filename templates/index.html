@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <title>Lottery Numbers</title>
+    <style>
+        /* Add some basic styles for the lottery numbers */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            border: 2px solid black;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lottery Numbers</h1>
+    <ul>
+        {% for number in lottery_numbers %}
+        <li>{{ number }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
